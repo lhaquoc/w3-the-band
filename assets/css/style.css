@@ -1,15 +1,13 @@
 /* Reset CSS */
-
 * {
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
 }
 
 html {
-    font-family: Arial, Helvetica, sans-serif;
+  font-family: Arial, Helvetica, sans-serif;
 }
-
 
 /* 
 1. Tu ngoai vao trong
@@ -17,110 +15,101 @@ html {
 3. Tong quan den chi tiet
 */
 
-
 /* 
 1.  vi tri
 2.  kich thuoc
 3.  mau sac
 4.  kieu chu, hinh dang
  */
-
-#main {}
-
-#header {
-    width: 100%;
-    height: 46px;
-    background: #000;
-    position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
+#main {
 }
 
-#nav {
-    display: inline-block;
+#header {
+  width: 100%;
+  height: 46px;
+  background: #000;
 }
 
 #nav,
 .sub-nav {
-    list-style-type: none;
+  list-style-type: none;
 }
 
-#nav>li {
-    display: inline-block;
+#nav > li {
+  display: inline-block;
 }
 
-#nav>li>a {
-    color: #fff;
-    text-transform: uppercase;
+#nav > li > a {
+  color: #fff;
+  text-transform: uppercase;
 }
 
 #nav li a {
-    text-decoration: none;
-    line-height: 46px;
-    padding: 0 23px 0 23px;
-    display: block;
+  text-decoration: none;
+  line-height: 46px;
+  padding: 0 23px 0 23px;
+  display: block;
 }
 
 #nav li:hover .sub-nav {
-    display: block;
+  display: block;
 }
 
-#nav>li:hover>a,
+#nav > li:hover > a,
 #nav .sub-nav li:hover {
-    color: #000;
-    background-color: #ccc;
+  color: #000;
+  background-color: #ccc;
 }
 
 #nav .sub-nav {
-    min-width: 160px;
-    display: none;
-    position: absolute;
-    background-color: #fff;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  min-width: 160px;
+  display: none;
+  position: absolute;
+  background-color: #fff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
 }
 
 #nav .sub-nav a {
-    color: #000;
-    padding: 0 12px;
-    line-height: 38px;
-}
-
-#nav .nav-arrow-down {
-    font-size: 14px;
-}
-
-#header .search-btn {
-    float: right;
-    padding: 0 21px;
-}
-
-#header .search-btn:hover {
-    background-color: #f44336;
-    cursor: pointer;
-}
-
-#header .search-icon {
-    color: #fff;
-    font-size: 20px;
-    line-height: 46px;
+  color: #000;
+  padding: 0 12px;
+  line-height: 38px;
 }
 
 #slider {
-    margin-top: 46px;
-    padding-top: 50%;
-    background: url('/assets/img/slider/slider1.jpg') top center / cover no-repeat;
-    position: relative;
+  min-height: 500px;
 }
 
-#slider .text-content {
-    position: absolute;
+#content {
 }
 
-#slider .text-heading {}
+#content .content-section {
+  width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 64px 0;
+}
 
-#slider .text-description {}
+#content .section-heading {
+  font-size: 30px;
+  font-weight: 500;
+  letter-spacing: 4px;
+  text-align: center;
+}
 
-#content {}
+#content .section-sub-heading {
+  font-size: 15px;
+  text-align: center;
+  margin-top: 25px;
+  font-style: italic;
+  opacity: 0.6;
+}
 
-#footer {}
+#content .about-text {
+  font-size: 15px;
+  text-align: justify;
+  margin-top: 25px;
+  line-height: 1.4;
+}
+
+#footer {
+}
