@@ -3,48 +3,96 @@
            Mobile: < 740px 
         */
 
-
 /* PC */
 
-@media (min-width: 1024px) {}
+@media (min-width: 64em) {
+}
 
+/* Tablet & mobile */
+@media (max-width: 63.9375em) {
+  #nav .sub-nav a {
+    padding: 5px 12px;
+  }
+  .btn {
+    padding: 15px 16px;
+  }
+  .contact-form .form-control {
+    padding: 15px;
+    font-size: 16px;
+  }
+  .contact-info {
+    line-height: 2;
+  }
+  #footer .social-list {
+    font-size: 48px;
+  }
+  #footer .copyright a {
+    padding: 11px 0;
+    display: inline-block;
+  }
+  .contact-submit-btn {
+    font-size: 16px;
+  }
+}
 
 /* Tablet */
 
-@media (min-width: 740px) and (max-width: 1023px) {}
-
+@media (min-width: 46.25em) and (max-width: 63.9375em) {
+  #footer .social-list a {
+    margin: 0 8px;
+  }
+}
 
 /* Mobile */
 
-@media (max-width: 739px) {
-    #header {
-        overflow: hidden;
-    }
-    #header .mobile-menu-btn {
-        display: block;
-    }
-    #header .search-btn {
-        display: none;
-    }
-    #nav {
-        display: block;
-    }
-    #nav>li:first-child {
-        display: inline-block;
-    }
-    #nav>li {
-        display: block;
-    }
-    #nav li a {
-        line-height: 46px;
-        padding: 1px 24px;
-    }
-    #nav .sub-nav {
-        position: initial;
-        background-color: #333;
-    }
-    #nav .sub-nav a {
-        color: #fff;
-        padding: 0 42px;
-    }
+@media (max-width: 46.1875em) {
+  .s-full-width,
+  .s-col-full {
+    width: 100%;
+  }
+  .s-mt-8 {
+    margin-top: 8px !important;
+  }
+  .s-mt-16 {
+    margin-top: 16px !important;
+  }
+
+  #header {
+    overflow: hidden;
+  }
+  #header .mobile-menu-btn {
+    display: block;
+  }
+  #header .search-btn {
+    display: none;
+  }
+  #nav {
+    display: block;
+  }
+  #nav > li:first-child {
+    display: inline-block;
+  }
+  #nav > li {
+    display: block;
+  }
+  #nav li a {
+    line-height: 46px;
+    padding: 1px 24px;
+  }
+  #nav .sub-nav {
+    position: initial;
+    background-color: #333;
+  }
+  #nav .sub-nav a {
+    color: #fff;
+    padding: 0 42px;
+  }
+
+  #content .member-img {
+    width: 60%;
+  }
+
+  .contact-form {
+    margin-top: 32px;
+  }
 }
